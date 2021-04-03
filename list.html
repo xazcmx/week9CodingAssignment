@@ -1,0 +1,111 @@
+<!-- 1.	Create a new website using HTML and Bootstrap. The website must include the following:
+a.	A Bootstrap navbar
+b.	A Bootstrap styled table
+c.	A Bootstrap styled form
+d.	At least 2 pages
+e.	Bootstrap grid used throughout to format elements
+i.	Elements should stack vertically when the window is small -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container">
+    
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Totally legit website</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
+            aria-expanded="false" aria-label="Toggle navagation">
+          <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNavDropdown">
+             <ul class="navbar-nav">
+                <li  class="nav-item">
+                     <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li  class="nav-item ">
+                    <a class="nav-link" href="info.html">Info</a>
+                </li>
+                <li  class="nav-item">
+                    <li  class="nav-item active">
+                    <a class="nav-link" href="list.html">List of Things</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" 
+                    aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="home.html">Also Home</a>
+                        <a class="dropdown-item" href="info.html">Also Info</a>
+                        <a class="dropdown-item" href="list.html">Also List</a>
+                    </div>
+                </li>
+             </ul>
+             
+         </div>
+    </nav><br>
+
+    <table class="table table-striped table-dark table-hover">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Famous Quote</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Ryan</td>
+            <td>Farrens</td>
+            <td>&ldquo;There's no reason to gatekeep trauma.&rdquo;</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Nate</td>
+            <td>Stevens</td>
+            <td>&ldquo;I wouldn't look into it.&rdquo;</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Pauly</td>
+            <td>The Guy</td>
+            <td>&ldquo;He's probably, like, growing some beans or something&rdquo;</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>David</td>
+            <td>Anime</td>
+            <td>&ldquo;Everyone goes to sleep and David makes ramen.&rdquo;</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Lukas</td>
+            <td>Bergman</td>
+            <td>&ldquo;All I see is dumpsters - are we still looking at homes to buy?&rdquo;</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Josh</td>
+            <td>Sandstrom</td>
+            <td>&ldquo;They even scheduled my second dose and I got a coupon!&rdquo;</td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>Thor</td>
+            <td>The One</td>
+            <td>&ldquo;Agnostics aren't boring; they're cowards.&rdquo;</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
